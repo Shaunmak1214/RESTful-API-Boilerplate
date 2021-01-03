@@ -1,0 +1,21 @@
+{
+  "name": "restful-api",
+  "version": "1.0.0",
+  "description": "This is a Restful-API written in node express - connected to mongo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "nodemon": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongo": "^0.1.0",
+    "mongoose": "^5.11.9",
+    "nodemon": "^2.0.6",
+    "path": "^0.12.7"
+  }
+}
