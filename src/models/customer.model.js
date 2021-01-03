@@ -1,8 +1,7 @@
 let mongoose = require('mongoose')
+require('dotenv').config()
 
-const MONGO_URI = "mongodb+srv://root:Yenwei-76167616@clustertest.i88xt.mongodb.net/CustomerAPI.Customer?retryWrites=true&w=majority";
-
-mongoose.connect("mongodb+srv://root:Yenwei-76167616@clustertest.i88xt.mongodb.net/Customer?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true});
 
 mongoose.set('useCreateIndex', true);
 
